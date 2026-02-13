@@ -47,27 +47,107 @@
 // 'Золотий партнер, знижка 10%'
 // 'У вас ще немає партнерської знижки'
 
-const totalSpent = Number(prompt("Введіть загальну суму витрачених коштів, у цьому магазині"));
-const payment = Number(prompt("Введіть суму"))
-let discount;
+// const totalSpent = Number(prompt("Введіть загальну суму витрачених коштів, у цьому магазині"));
+// const payment = Number(prompt("Введіть суму"))
+// let discount;
 
-if (totalSpent > 100 && 1000 > totalSpent){
-    discount = 2
-    alert("бронзовий партнер, знижка 2%")
+// if (totalSpent > 100 && 1000 > totalSpent){
+//     discount = 2
+//     alert("бронзовий партнер, знижка 2%")
+// }
+
+// else if (totalSpent > 1000 && 5000 > totalSpent) {
+//     discount = 5
+//     alert("срібний партнер, знижка 5%") 
+// }
+
+// else if (totalSpent > 5000) {
+//     discount = 10
+//     alert("золотий партнер, знижка 10%")
+// }
+
+// else {discount = 0 
+//     alert("не партнер, знижка 0%")
+// }
+
+// const result = alert(`Оформляемо замовлення на суму ${payment} зі знижкою ${discount}%`)
+
+// let lang = prompt("Введіть мову(ua,en,fr)");
+
+// if (lang === "ua") {
+//     console.log("Січень")
+// }
+
+// else if (lang === "en") {
+//     console.log("January")
+// }
+
+// else if (lang === "fr") {
+//     console.log("Janvier")
+// }
+
+// else {alert("Ваша мова не підримується,спробуйте іншу!!!")
+
+// }
+
+// switch (lang) {
+//     case "ua":
+//         console.log("Січень")
+//         break
+//         case "en":
+//         console.log("January")
+//         break
+//         case "fr":
+//             console.log("Janvier")
+//             break
+//             default:
+
+//                 console.log("Ваша мова не підримується,спробуйте іншу!!!")
+// }
+
+let hotelStars = prompt("Введіть кілкість зірок готеля");
+
+// if (hotelStars === 1 || "одна".toLowerCase().trim() || "один".toLowerCase().trim()) {
+//     alert("Такий готель буде коштувати 20$")
+// }55
+
+
+// else if (hotelStars === 2 || "дві".toLowerCase().trim() || "два".toLowerCase().trim()) {
+//     alert("Такий готель буде коштувати 30$")
+// }
+
+// else if (hotelStars === 3 || "три".toLowerCase().trim()) {
+//     alert("Такий готель буде коштувати 50$")
+// }
+
+// else if (hotelStars === 4 || "чотири".toLowerCase().trim()) {
+//     alert("Такий готель буде коштувати 70$")
+// }
+
+// else if (hotelStars === 5 || "п'ять".toLowerCase().trim() || "пять".toLowerCase().trim()) {
+//     alert("Такий готель буде коштувати 120$")
+// }
+
+// else { alert("Такої кількості зірок немає") }
+
+
+switch (hotelStars) {
+    case "1" || "одна".toLowerCase().trim() || "один".toLowerCase().trim():
+        alert("Такий готель буде коштувати 20$")
+        break
+    case "2" || "дві".toLowerCase().trim() || "два".toLowerCase().trim():
+        alert("Такий готель буде коштувати 30$")
+        break
+    case "3" || "три".toLowerCase().trim():
+        alert("Такий готель буде коштувати 50$")
+        break
+    case "4" || "чотири".toLowerCase().trim():
+        alert("Такий готель буде коштувати 70$")
+        break
+    case "5" || "п'ять".toLowerCase().trim() || "пять".toLowerCase().trim():
+        alert("Такий готель буде коштувати 120$")
+    default:
+
+        alert("Такої кількості зірок немає")
 }
 
-else if (totalSpent > 1000 && 5000 > totalSpent) {
-    discount = 5
-    alert("срібний партнер, знижка 5%") 
-}
-
-else if (totalSpent > 5000) {
-    discount = 10
-    alert("золотий партнер, знижка 10%")
-}
-
-else {discount = 0 
-    alert("не партнер, знижка 0%")
-}
-
-const result = alert(`Оформляемо замовлення на суму ${payment} зі знижкою ${discount}%`)
