@@ -29,12 +29,40 @@ for(let i = 1; i <= 5; i ++) {
 // 21 Оскільки в умові буде false то цикл припиниться (фігурні дужки не виконуються)
 
 
-const min = parseInt(prompt("Введіть мінімальне число:"));
-const max = parseInt(prompt("Введіть максимальне число:"));
-let sum = 0;
-for (let i = min; i <= max; i++) {
-    if (i % 2 === 0) {
-        sum += i;
-    }
-}
-console.log(`Сума всіх парних чисел від ${min} до ${max} дорівнює ${sum}.`);
+// const min = parseInt(prompt("Введіть мінімальне число:"));
+// const max = parseInt(prompt("Введіть максимальне число:"));
+// let sum = 0;
+// for (let i = min; i <= max; i++) {
+//     if (i % 2 === 0) {
+//         sum += i;
+//     }
+// }
+// console.log(`Сума всіх парних чисел від ${min} до ${max} дорівнює ${sum}.`);
+
+
+// const userNumber = Number(prompt(`Яке число ви бажаєте знайти у проміжку між ${min}`))
+
+// let i = min;
+// while (i !== userNumber) {
+//     console.log(`${i} не те число яке ви шукаєте`)
+//     i++;3
+// }
+
+// console.log(`Ви знайшли число ${userNumber}`)
+
+// while (i <= max) {
+//     if (i === userNumber) {
+//         console.log(`Ми знайшли ${userNumber}`)
+//         break
+// }
+//   i++ 
+// }
+ 
+
+const savePassword = '112233';
+
+let enterPassword; 
+do {
+    enterPassword = prompt("Введіть пароль")
+} while (enterPassword !== savePassword)
+    alert("Вітаю ви залогінені") 
