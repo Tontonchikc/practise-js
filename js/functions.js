@@ -118,13 +118,20 @@ let sum = 0;
 
 
 
-function myAverageScore(score) {
+// function myAverageScore(score) {
 
+//     for (let i = 0; i < score.length; i++) {
+//         sum += score[i]
+//     }
+
+//     return sum
+// }
+
+
+const myAverageScore = (score) => {
     for (let i = 0; i < score.length; i++) {
         sum += score[i]
     }
-
-    return sum
 }
 
 
@@ -144,4 +151,17 @@ else if (avarageScore > 71 && avarageScore < 80) {
     console.log("C")
 }
 
-else {console.log("D")}
+else { console.log("D") }
+
+
+// function sumNumbers(a, b) {
+//  console.log(arguments)
+//  let sum = 0
+//  for (const argument of arguments){
+// sum += argument
+
+
+// }
+// }
+
+// console.log(sumNumbers(1, 1));
