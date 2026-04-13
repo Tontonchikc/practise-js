@@ -1,0 +1,47 @@
+const number = [1, 2, 3, 4, 5, 6, 7];
+
+number.forEach((number, index, arr) => {
+  console.log(`elemnt ${number}, Index ${index},Array ${arr}`);
+});
+
+const num2 = number.map((num) => num * num);
+console.log(num2);
+
+const users = [
+  {
+    name: "Mango",
+    isActive: true,
+    age: 15,
+  },
+  {
+    name: "banan",
+    isActive: true,
+    age: 16,
+  },
+  {
+    name: "pear",
+    isActive: false,
+    age: 40,
+  },
+  {
+    name: "Watermelon",
+    isActive: false,
+    age: 25,
+  },
+];
+
+const newUser = users.map((user) => {
+  return { name: user.name, isActive: !user.isActive };
+});
+
+console.log(newUser);
+
+const activeUsers = users.filter((user) => user.isActive);
+
+const inActive = users.filter((user) => !user.isActive);
+
+console.log(activeUsers, inActive);
+
+const youngUsers = users.filter((user) => user.age < 20);
+
+console.log(youngUsers);
