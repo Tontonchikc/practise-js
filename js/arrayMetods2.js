@@ -36,3 +36,16 @@ const filterFruits = fruits.reduce((acc, element) => {
     return acc
 }
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
