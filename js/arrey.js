@@ -48,11 +48,11 @@ const employees = 10;
 let totalSalary = 0;
 
 
-for(let i = 1;i <= employees; i++){
-    const salary = Number.parseInt(Math.random () * (5000 - 500) + 500
-    totalSalary += salary;
-}
+// for(let i = 1;i <= employees; i++){
+//     const salary = Number.parseInt(Math.random () * (5000 - 500) + 500
+//     totalSalary += salary;
+// }
 
 
-console.log(totalSalary)
+// console.log(totalSalary)
 
