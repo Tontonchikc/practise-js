@@ -58,4 +58,8 @@ firstA.classList.add("siteNavLink")
 
 
 const firstLink = navList.querySelectorAll("a")[0];
-console.log(firstLink);
+console.log(firstLink); 
+
+
+
+
